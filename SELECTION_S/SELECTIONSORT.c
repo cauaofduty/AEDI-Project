@@ -15,5 +15,3 @@ void selectionSort(int *vet, int ind, int start){//de menor a menor, insere-o no
     }
     selectionSort(vet, ind, ++start);
 }
-
-void 
