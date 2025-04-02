@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 
-void insertionSort(int *vet, int ind){
+void insertionSort(int *vet, int ind){//achei complicado
     int atual , j;
     
     for(int i = 1; i < ind; i++){
-        atual = vet[i];
-        j = i - 1;
-        while(j>=0 && vet[j] >= atual){
+        atual = vet[i];//armazena a atual insercao
+        j = i - 1;//"sublista ordenada"
+        while(j >= 0 && vet[j] >= atual){//percorre e desloca elementos ate que o j seja menor que o i
             vet[j+1] = vet[j]; 
             j--;
         }
-        vet[j + 1] = atual;
+        vet[j + 1] = atual;//insere o i
     }
 }
 
