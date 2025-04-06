@@ -1,12 +1,18 @@
 #include <stdio.h>
-#include <math.h>
+
+/* CONSIDERAÇÕES FINAIS - Cauã
+Algoritmo bastante intuitivo. Pode confundir, mas é o esperado tratando-se de algoritmos complexos.
+ Mesmo que faça o uso de um loop que diminui o limite a ser ordenado, isso não ajuda tanto em termos de eficiência
+ devido ao número necessário de trocas para realizar a ordenação. 
+
+ Embora seja satisfatório de visualizar e possua constância no pior caso,
+ tende a ser mais lento que outros algoritmos com a mesma complexidade. */
 
 void swap(int *a, int *b){//troca valores
     int aux = *a;
     *a = *b;
     *b = aux; 
 }
-
 
 void heapify(int vet[], int i, int n){
     //assume o indice atual como maior (pai) e dita seus filhos
