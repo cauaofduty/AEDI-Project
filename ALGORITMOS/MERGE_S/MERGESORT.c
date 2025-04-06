@@ -44,12 +44,3 @@ void mergeSort(int vet[], int left, int right){
        merge(vet, left, mid, right);//faz o merge a partir de cada array unitario preenchendo os arrays1/2 e por fim esvazia-os de volta no array original
        }
    }
-   
-int main(){
-	int vetor[]= {3, 1, 5, 2, 9, 8};
-	mergeSort(vetor, 0, 5);
-	
-	for(int i = 0; i < 6 ; i++){
-	    printf("%d ", vetor[i]);
-	}
-    }

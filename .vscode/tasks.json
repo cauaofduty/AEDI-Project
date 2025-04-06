@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar e Executar C (Terminal Externo)",
+            "type": "shell",
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "gcc \"${file}\" -o \"${fileDirname}\\${fileBasenameNoExtension}.exe\" && start cmd /k \"${fileDirname}\\${fileBasenameNoExtension}.exe\""
+            ],
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Compila com GCC e executa em terminal externo (cmd.exe)"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${workspaceFolder}/HEAPSORT.c",
+                "-o",
+                "${workspaceFolder}/output/HEAPSORT.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compilação para debug com GCC"
+        }
+            ]
+}

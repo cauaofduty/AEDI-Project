@@ -14,4 +14,5 @@ void selectionSort(int *vet, int ind, int start){//de menor a menor, insere-o no
         vet[indiceMenor] = aux;
     }
     selectionSort(vet, ind, ++start);
+    //nao vou me dar ao trabalho de mudar visto que voce deve estar usando implementação propria
 }
